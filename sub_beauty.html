@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>刘鑫鑫</title>
+    <link rel="stylesheet" href="style/top-bottom.css" type="text/css"/>
+    <link rel="stylesheet" href="style/sub_beauty_style.css" type="text/css"/>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/example.js"></script>
+    <script type="text/javascript"  src="js/posfixed.js"></script><!--导航定位-->
+</head>
+<body>
+<header class="o_h">
+    <div id="h_bg">
+        <ul class="o_h">
+            <li class="white1"></li>
+            <li class="ash"></li>
+            <li class="white2"></li>
+        </ul>
+    </div>
+    <img src="images/Logo.png" id="logo" alt=""/>
+
+    <ul class="small_nav o_a">
+        <li class="h_login"><a href="#">登陆 | 注册</a></li>
+        <li class="h_my"><a href="#">我的碰客</a></li>
+    </ul>
+        <div class="banner">
+            <img src="images/bg1.jpg" alt="03"/>
+        </div>
+    <div class="search">
+        <input type="text" placeholder="请输入关键字"/><button>搜索</button>
+    </div>
+</header>
+<!-------------------------------------------导航--------------------------------------------->
+<nav>
+    <ul class="big_nav o_h" id="example-one">
+        <li><a href="index.html">首页</a></li>
+        <li class="current_page_item"><a href="sub_beauty.html">丽人街</a></li>
+        <li><a href="sub_man.html">男人装</a></li>
+        <li><a href="#">中国风</a></li>
+        <li><a href="#">饰品行</a></li>
+        <li><a href="#">玩具屋</a></li>
+        <li><a href="#">数字时尚</a></li>
+        <li><a href="#">碰客杂志</a></li>
+        <li><a href="#">俄文版</a></li>
+    </ul>
+    <div class="colors">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <script>
+        $(function(){
+            $(".colors div").click(function(){
+                var ys=$(this).css("background");
+                $("nav").css({background:ys});
+                var zy=$(this).css("color");
+                $("nav a").css({color:zy});
+            })
+        });
+        $(function(){
+            $('nav').posfixed({
+                distance : 0,
+                pos : 'top',
+                type : 'while',
+                hide : false
+            });
+        });
+    </script>
+</nav>
+<!--------------------------------------------内容--------------------------------------------------->
+    <main class="o_h">
+        <article>
+            <section class="main_list o_h">
+                <ul>
+                    <li>
+                        <div class="list_layout">
+                            <img src="images/beauty/theme1.jpg" alt=""/>
+                            <div class="list_text">
+                                <h3>衣服衣服</h3>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list_layout">
+                            <img src="images/beauty/theme2.jpg" alt=""/>
+                            <div class="list_text">
+                                <h3>饰品饰品</h3>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list_layout">
+                            <img src="images/beauty/theme3.jpg" alt=""/>
+                            <div class="list_text">
+                                <h3>鞋子鞋子</h3>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+<!-----------------------------------------------衣服咨询1------------------------------------------>
+            <section class="clothes">
+                <dl>
+                    <dt>
+                        <p> in Dress collocation</p>
+                        <h1>在秋天的第一天保持凉爽</h1>
+                        <time> <span></span>at September 1, 2018<span></span></time>
+                    </dt>
+                    <dd><img src="images/beauty/main_list1.jpg" alt=""/></dd>
+                    <dd>Material Girl（MG）是时尚教母麦当娜为其爱女lola打造的时尚品牌。
+                        Material Girl 代表了充满梦想、自信、创造潮流的新时代少女。崇尚
+                        自由，梦想，个性的文化产品，并加以独特的组合创意。坚持，自信，
+                        突破给她们带来了快乐的生活方式。她们的表现不再那么甜美，柔弱，
+                        取而代之的是个性独立，性感大胆的性格。是真正快乐生活的创造者，
+                        “星一代”！
+                    </dd>
+                    <dd>因测量方式不同会有1-2CM误差，相关数据仅作参考，以收到实物为准。 单位：CM
+                        ※ 参考尺码因衣服版型、剪裁不同会有误差，仅供参考取而代之的是个性独立
+                        ，性感大胆的性格。是真正快乐生活的创造者，“星一代”！
+                    </dd>
+                    <dd class="clothes_con">
+                        <a href="#">电话联系</a>
+                        <a href="#">继续阅读</a>
+                        <a href="#">点赞</a>
+                    </dd>
+                </dl>
+            </section>
+            <section class="clothes">
+                <dl>
+                    <dt>
+                        <p> in Dress collocation</p>
+                        <h1>在秋天的第一天保持凉爽</h1>
+                        <time> <span></span>at September 1, 2018<span></span></time>
+                    </dt>
+                    <dd><img src="images/beauty/main_list2.jpg" alt=""/></dd>
+                    <dd>Material Girl（MG）是时尚教母麦当娜为其爱女lola打造的时尚品牌。
+                        Material Girl 代表了充满梦想、自信、创造潮流的新时代少女。崇尚
+                        自由，梦想，个性的文化产品，并加以独特的组合创意。坚持，自信，
+                        突破给她们带来了快乐的生活方式。她们的表现不再那么甜美，柔弱，
+                        取而代之的是个性独立，性感大胆的性格。是真正快乐生活的创造者，
+                        “星一代”！
+                    </dd>
+                    <dd>因测量方式不同会有1-2CM误差，相关数据仅作参考，以收到实物为准。 单位：CM
+                        ※ 参考尺码因衣服版型、剪裁不同会有误差，仅供参考取而代之的是个性独立
+                        ，性感大胆的性格。是真正快乐生活的创造者，“星一代”！
+                    </dd>
+                    <dd class="clothes_con">
+                        <a href="#">电话联系</a>
+                        <a href="#">继续阅读</a>
+                        <a href="#">点赞</a>
+                    </dd>
+                </dl>
+            </section>
+            <section class="clothes">
+                <dl>
+                    <dt>
+                        <p> in Dress collocation</p>
+                        <h1>在秋天的第一天保持凉爽</h1>
+                        <time> <span></span>at September 1, 2018<span></span></time>
+                    </dt>
+                    <dd><img src="images/beauty/main_list3.jpg" alt=""/></dd>
+                    <dd>Material Girl（MG）是时尚教母麦当娜为其爱女lola打造的时尚品牌。
+                        Material Girl 代表了充满梦想、自信、创造潮流的新时代少女。崇尚
+                        自由，梦想，个性的文化产品，并加以独特的组合创意。坚持，自信，
+                        突破给她们带来了快乐的生活方式。她们的表现不再那么甜美，柔弱，
+                        取而代之的是个性独立，性感大胆的性格。是真正快乐生活的创造者，
+                        “星一代”！
+                    </dd>
+                    <dd>因测量方式不同会有1-2CM误差，相关数据仅作参考，以收到实物为准。 单位：CM
+                        ※ 参考尺码因衣服版型、剪裁不同会有误差，仅供参考取而代之的是个性独立
+                        ，性感大胆的性格。是真正快乐生活的创造者，“星一代”！
+                    </dd>
+                    <dd class="clothes_con">
+                        <a href="#">电话联系</a>
+                        <a href="#">继续阅读</a>
+                        <a href="#">点赞</a>
+                    </dd>
+                </dl>
+            </section>
+<!--------------------------------------------------联系我们------------------------------------->
+            <section class="content">
+                <div class="con_banner">
+                    <img src="images/con_bg.jpg" alt=""/>
+                </div>
+                <dl>
+                    <dt>联系我们</dt>
+                    <dd>
+                        <form action="">
+                            <p><label for="u_name">用户名：</label><input id="u_name" type="text"/></p>
+                            <p><label for="u_email">邮箱：</label><input id="u_email" type="email"/></p>
+                            <p><label for="u_date">日期：</label><input id="u_date" type="date"/></p>
+                            <p class="text"><label for="u_tel">事情：</label><textarea name="tel" id="u_tel" cols="30" rows="10">
+                            </textarea></p>
+                        </form>
+                    </dd>
+                </dl>
+            </section>
+        </article>
+    </main>
+<!---------------------------------------------------页尾------------------------------------------>
+
+<footer class="o_h">
+    <dl class="footer_text">
+        <dt><img src="images/logo-white.png" alt=""/></dt>
+        <dd>
+            一向走在潮...韩流前端的我，果断又在上周末发现了新节目
+            ——《Breakers》！这一档号称是全新的音乐竞技类节目，真的是将
+            很多有独特音乐风格的歌手带到了我的眼前。 ...
+        </dd>
+    </dl>
+    <div class="footer_hd o_h">
+        <ul class="footer_nav f_l">
+            <li class="nav_text"><a href="#">Home</a></li>
+            <li><a href="#">Place</a></li>
+            <li><a href="#">Customized</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <dl class="footer_con f_l">
+            <dt>Phone</dt>
+            <dd>44444444444</dd>
+            <dd>66666666666</dd>
+            <dd>04511234565</dd>
+        </dl>
+        <dl class="footer_con con1 f_l">
+            <dt>Email</dt>
+            <dd>1621115870@.qq.com</dd>
+            <dd>0451123455@.qq.com</dd>
+        </dl>
+        <dl class="footer_con con2 f_l">
+            <dt>Address</dt>
+            <dd>地球中国黑龙江省</dd>
+            <dd>哈尔滨市哈西东方国际中心十层</dd>
+            <dd>哈西东方国际中心十层</dd>
+        </dl>
+    </div>
+    <p>版权所有归@版权所有归</p>
+</footer>
+</body>
+</html>

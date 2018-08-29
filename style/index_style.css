@@ -1,0 +1,535 @@
+main dt{
+    margin: 40px auto 30px;
+    width: 190px;
+    font-family: yw;
+}
+main dt h1{
+    font-size: 46px;
+}
+main dt h1 span{
+    display: block;
+    width: 80px;
+    margin: 20px 0 5px 1px;
+    border-bottom: 3px solid #dd387d;
+}
+main dt p{
+    margin-left: 3px;
+}
+main dd h3{
+    font-family: xw;
+    font-size: 24px;
+}
+/*-------------------------------------------------丽人街-----------------------------------------*/
+.beauty{
+    margin: 35px 30px 0;
+}
+.beauty dl{
+    position: relative;
+    height: 730px;
+}
+.beauty dd.beauty-list1{
+    width: 60%;
+    position: absolute;
+    left: 3%;
+}
+.beauty dd.beauty-list2{
+    width: 60%;
+    position: absolute;
+    left: 10%;
+    top: 380px;
+}
+.beauty dd.beauty-list3{
+    width: 40%;
+    position: absolute;
+    top: 190px;
+    right: 3%;
+}
+.beauty dd ul li:nth-child(1){
+    width: 35%;
+    position: relative;
+    z-index: 99;
+    perspective: 600px;
+}
+.beauty dd img{
+    width: 100%;
+    height: 250px;
+    box-shadow: 0px 0px 20px #b2b2b2;
+}
+.beauty dd img:hover{
+    transform: rotatey(360deg);
+    transition: 1.5s all;
+}
+.beauty dd li.b-text{
+    background: #efefef;
+    width: 60%;
+    height: 200px;
+    overflow: hidden;
+}
+.beauty dd li.b-text p{
+    padding: 10px 10px 0 20px;
+}
+.beauty dd.beauty-list1 li{
+    float: left;
+}
+.beauty .beauty-list1 img{
+    margin: 50px -100px 0 0;
+}
+.beauty dd.beauty-list1 li.b-text{
+    padding: 25px 20px 20px 120px ;
+    margin-left: -100px;
+}
+.beauty dd.beauty-list2 li,.beauty dd.beauty-list3 li{
+    float: right;
+}
+.beauty .beauty-list2 img{
+    margin: 0 0 50px -100px;
+}
+.beauty dd.beauty-list2 li.b-text{
+    margin-top: 120px;
+    padding: 25px 120px 20px 20px ;
+}
+.beauty dd.beauty-list3 img{
+    width: 250px;
+    height: 350px;
+    margin: -50px 0 0 -100px;
+}
+.beauty .beauty-list3 li.b-text{
+    width: 230px;
+    height: 520px;
+    padding: 25px 20px 20px 20px;
+}
+.beauty .beauty-list3 li.b-text span{
+    display:block;
+    width: 100px;
+    height: 280px;
+    float: right;
+}
+
+/*----------------------------------------------------------男人装------------------------------*/
+
+.man{
+    margin:0 30px;
+    padding-bottom: 30px;
+}
+.man dt h1 span{
+    border-bottom: 3px solid #317ed7;
+}
+.man dd{
+    float: left;
+    width: 33.3%;
+    height: 600px;
+    padding-right: 20px;
+}
+.man dd a{
+    display: block;
+    width: 100%;
+    height: 600px;
+    background: #efefef;
+}
+.man img{
+    height: 200px;
+    width: 100%;
+}
+.man dd.man-list1{
+    padding-right: 0;
+}
+.man dd h3{
+    padding-top: 50px;
+    height: 150px;
+    text-align: center;
+}
+.man dd p{
+    padding: 20px;
+}
+.man dd:hover a{
+    background: #317ed7;
+    box-shadow: 0 0 10px #b5b5b5;
+    transform: scale(1.1);
+    transition: 1s all;
+}
+.man dd:hover h3{
+    text-shadow: 1px 1px 2px #e1e1e1;
+}
+.man dd:hover h3,.man dd:hover p{
+    color: #fff;
+    letter-spacing: 2px;
+    animation: dd 1s 1;
+    text-indent: 2em;
+}
+@keyframes dd {
+    from{letter-spacing: 1px;
+        text-indent: 0;
+    }
+    to{letter-spacing: 2px;
+        text-indent: 2em;
+    }
+}
+.man dd:nth-child(2):hover p,.man dd:nth-child(2):hover h3{
+    padding-left: 40px;
+}
+.man dd:hover button{display: block;}
+.man dd button{
+    background: rgba(0,0,0,.0);color: #fff; border:none;
+    width: 100px;height: 40px;line-height: 40px;
+    position: absolute;  bottom: 50px;right: 35px;
+    display: none;
+}
+.man dd button:hover{
+    background: #8898b5;
+    border-radius: 5px;
+}
+
+/*-----------------------------------------------------------饰品行-----------------------------------*/
+.jeweiry{
+    margin: 0 30px;
+}
+.jeweiry dt h1 span{
+    border-bottom: 3px solid #d7841a;
+}
+.jeweiry dd{
+    float: left;
+    width: 25%;
+    height: 700px;
+}
+.jeweiry .jew-list3,.jeweiry .jew-list4{
+    width: 50%;
+    height: 350px;
+}
+.jeweiry img{
+    width: 100%;
+    height: 350px;
+}
+.jeweiry .j-text{
+    height: 350px;
+}
+.jeweiry .jew-list3 .grid,.jeweiry .jew-list4 .grid{
+    float: left;
+    width: 50%;
+}
+.jeweiry .jew-list3 .j-text,.jeweiry .jew-list4 .j-text{
+    float: left;
+    width: 50%;
+}
+.jeweiry .j-text{
+    padding: 30px 20px 20px 42px;
+    position: relative;
+}
+.jeweiry .j-text span{
+    display: inline-block;
+    width: 10px;
+    height: 120px;
+    position: absolute;
+    left: 26px;
+    top: 28px;
+    border-left: 2px solid #444;
+}
+.jeweiry .j-text h3{
+    padding-bottom: 5px;
+}
+.jeweiry .j-text p{
+    padding:7px 10px 0 15px;
+}
+.jeweiry a:hover span{
+    border-left: 2px solid #efa91f;
+}
+.jeweiry a:hover h3{
+    color: #efa91f;
+    letter-spacing: 4px;
+    animation: up .5s 1;
+}
+
+/*------------------------------------------------------玩具屋----------------------------------------*/
+.toys{
+    margin: 0 30px;
+}
+.toys dt h1 span{
+    border-bottom: 3px solid #25b34e;
+}
+.toys dd{
+    width: 33.3%;
+    height: 700px;
+    float: left;
+    padding-right: 10px;
+}
+.toys dd a{
+    display: block;
+    padding: 20px;
+    background: #efefef;
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+.toys dd img{
+    width: 100%;
+    height: 300px;
+}
+.toys a:hover img{
+    animation: top 1s 1 ease;
+    position: relative;
+    top: 0px;
+}
+@keyframes top {
+    0%{
+        top: 380px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+.toys a:hover .t-text{
+    animation: bottom 1s 1 ease;
+    position: absolute;
+    bottom: 20px;
+}
+@keyframes bottom {
+    0%{
+        top: 20px;
+    }
+    100%{
+        top: 320px;
+    }
+}
+.toys dd .t-text{
+    height: 350px;
+    padding: 20px;
+}
+.toys dd .t-text p{
+    padding: 10px;
+}
+
+/*----------------------------------------------中国风-------------------------------------------*/
+.china{
+    margin: 0 30px;
+}
+.china dt h1 span{
+    border-bottom: 3px solid #e52b16;
+}
+.china dd{
+    float: left;
+    width: 50%;
+    height: 600px;
+}
+.china dd a{
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+.china dd img{
+    width: 100%;
+    height: 100%;
+}
+.china .china-list1{
+    background: url(../images/china_bg.jpg) center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding:20px;
+    position: relative;
+}
+.china .china-list1 .hd{
+    z-index: 999;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -75px;
+}
+.china .china-list1 .hd li{
+    overflow: hidden;
+    width:25px;
+    height:25px;
+    margin-right:5px;
+    cursor:pointer;
+    padding-left: 25px;
+    float: left;
+    background: url("../images/buttons.png") no-repeat -22px 3px;
+}
+.pic-left .hd ul li.on{ background-position:-22px -22px; }
+.china .china-list1 figure{
+    height: 560px;
+    width: 100%;
+}
+.china .china-list1 .bd .picList{
+    width: 100%;
+    height: 560px;
+}
+.china .china-list1 .bd .picList img{
+    height: 560px;
+}
+.china .china-list2{
+    height: 600px;
+}
+.china .china-list2 li{
+    width: 50%;
+    float: left;
+}
+.china .china-list2 figure{
+    height: 300px;
+    width: 100%;
+    padding: 0px 0 20px 20px;
+}
+.china .china-list2 li:nth-of-type(3) figure,.china .china-list2 li:nth-of-type(4) figure{
+    padding: 0px 0 0px 20px;
+}
+/*-----------------------------------------------潮流单品------------------------------------*/
+.trend{
+    margin: 0 30px;
+}
+.trend dt h1 span{
+    border-bottom: 3px solid #b241a4;
+}
+.trend dd{
+    width: 25%;
+    height: 250px;
+    float: left;
+    position: relative;
+}
+.trend dd img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    margin-left: -100px;
+}
+.trend dd a{
+    display: block;
+    background: url(../images/trend-bg2.png) center;
+    width: 220px;
+    height: 220px;
+    font-size: 18px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -110px;
+    z-index: 999;
+}
+.trend dd a:hover{
+    transition: 1s all;
+    transform: rotate(360deg);
+    color: #cfc035;
+}/*
+.trend dd:nth-child(3) a{
+    transform: rotate(-20deg);
+}
+.trend dd:nth-child(5) a{
+    transform: rotate(-40deg);
+}
+.trend dd:nth-child(7) a{
+    transform: rotate(-60deg);
+}
+.trend dd:nth-child(9) a{
+    transform: rotate(-70deg);
+}*/
+.trend dd a:hover{
+    transition: 1s all;
+    transform: rotate(360deg);
+}
+/*------------------------------------------------------服务板块--------------------------------*/
+.service{
+    width: 100%;
+    height: 500px;
+    padding-top: 30px;
+}
+.service>div{
+    height: 500px;
+    width: 50%;
+    float: left;
+}
+.service #hd1{
+    background: url("../images/ser-bg.JPG");
+    background-attachment: fixed;
+    background-size: contain;
+}
+.service #hd2{
+    background: #fff;
+    padding: 50px 50px 50px 0;
+}
+.service #bd{
+    height: 400px;
+    background: #efefef;
+    margin-left: -50px;
+    margin-right: -100px;
+    padding: 30px 30px 30px 0;
+}
+.service #bd ul{
+    margin-left: -50px;
+}
+.service #bd li{
+    width: 30%;
+    float: left;
+    height: 165px;
+    padding: 10px;
+    margin: 0 10px 10px 0;
+    border: 1px solid #eee;
+    background: rgba(255, 255, 255, 0.69);
+}
+.service #bd .s-text{
+    background: #cfccff;
+    height: 145px;
+    padding: 20px;
+    box-shadow: 0px 0px 8px #cbcbcb;
+}
+.service #bd .s-text h3{
+    font-family: xw;
+    font-size: 24px;
+}
+.service #bd .s-text p{
+    padding: 5px 10px;
+}
+/*----------------------------------------------联系我们----------------------------------------*/
+main .contact{
+    height: 650px;
+    position: relative;
+    padding-top: 50px;
+}
+main .contact h1{
+    padding: 50px 0;
+    text-align: center;
+    color: #5b667e;
+    font-size: 34px;
+}
+main .contact form{
+    width: 1024px;
+    margin: 0 auto;
+}
+main .contact h3{
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+main .contact h3 span{
+    font-size: 16px;
+    display: block;
+    color: #555;
+}
+main .contact form input{
+    width: 321px;
+    height: 50px;
+    float: left;
+    margin: 20px 20px 0 0;
+    padding: 15px;
+    border: 0;
+    background: #efefef;
+}
+main .contact form textarea{
+    width: 1002px;
+    height: 150px;
+    margin-top: 20px;
+    border: 0;
+    background: #efefef;
+}
+main .contact form button{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    margin-left: -50px;
+    width: 100px;height: 40px;
+    border: 1px solid #999;
+    color: #000000;
+    background-color: #fff;
+    font-size: 16px;
+}
+main .contact form button:hover{background: #000000;color: #fff;border: 0}
+
+
+
+

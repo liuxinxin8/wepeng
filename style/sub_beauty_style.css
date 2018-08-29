@@ -1,0 +1,187 @@
+body{
+    background: #E5E4DA;
+    padding: 50px;
+
+}
+header,main{
+    background: #ffffff;
+}
+
+/*-----------------------------------------------内容------------------------------------------------*/
+main section{
+    padding: 30px 0;
+    width: 1024px;
+    margin: 0 auto;
+}
+main .main_list li{
+    width: 33%;
+    height: 250px;
+    float: left;
+    padding:20px 20px 20px 0;
+}
+main .main_list li:nth-child(1){
+    padding: 20px;
+}
+main .main_list .list_layout{
+    background-color: #000;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image:-webkit-linear-gradient(-20deg,rgba(255,255,255,.0) 170px,
+    rgba(255, 255, 255, 1) 210px, rgba(255, 255, 255, 1) 240px,
+    rgba(255,255,255,0) 280px);
+    background-position: -170px 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+main .main_list li:hover .list_layout{
+    background-position: 500px 0;
+    transition: 1s all;
+}
+main .main_list li:hover .list_text{
+    display: block;
+    transition: 1s all;
+}
+main .main_list li:hover img{
+    opacity: .6;
+    transition: .5s all;
+    transform: scale(1.1);
+}
+main .main_list .list_layout img{
+    width: 100%;
+    height: 100%;
+}
+main .main_list .list_layout .list_text{
+    font-family: xw;
+    width: 40%;
+    height: 40px;
+    background: #fff;
+    text-align: center;
+    display: none;
+    line-height: 40px;
+    position: absolute;
+    top: 90px;
+    left: 30%;
+}
+main .main_list li:hover .list_text{
+    display: block;
+}
+main .main_list .list_layout .list_text h3{
+    color: #6c7895;
+    font-size: 18px;
+    font-weight: 500;
+}
+main .main_list .list_layout .list_text:hover h3{
+    color: #cfc035;
+}
+/*-------------------------------------------------------衣服搭配------------------------------------*/
+.clothes dt{
+    text-align: center;
+}
+.clothes dt p{
+    color: #cfc035;
+    padding: 15px 0;
+}
+.clothes dt h1{
+    font-size: 26px;
+}
+.clothes time{
+    display: block;
+    color: #888;
+    padding: 15px 0;
+}
+.clothes time span{
+    display: inline-block;
+    height: 1px;
+    width: 50px;
+    background: #b4b4b4;
+    margin: 5px;
+}
+.clothes dd{
+    padding: 10px 0;
+}
+.clothes  dd img{
+    width: 950px;
+    margin-left: 37px;
+}
+.clothes  dd img:hover{
+    opacity: .7;
+}
+.clothes .clothes_con{
+    padding: 0;
+    margin: 15px 0;
+    border-top: 1px solid #c9c9c9;
+    border-bottom: 1px solid #c9c9c9;
+    height: 45px;
+}
+.clothes .clothes_con a{
+    color: #333;
+    text-align: center;
+    display: inline-block;
+    line-height: 45px;
+    width: 335px;
+    height: 45px;
+    border-right: 1px solid #c9c9c9;
+}
+.clothes .clothes_con a:last-child{
+    border: 0;
+}
+.clothes .clothes_con a:hover{
+    color: #cfc035;
+}
+/*---------------------------------------联系我们---------------------------------------*/
+.content{
+    position: relative;
+    padding-bottom: 80px;
+}
+.content .con_banner{
+    width: 70%;
+}
+.content .con_banner img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #c4c4c4;
+}
+.content dl{
+    width: 40%;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+    box-shadow: 0 0 20px #c4c4c4;
+    padding: 20px;
+}
+.content dl dt{
+    font-size: 24px;
+    color: #6c7895;
+    padding: 10px 0 0 10px;
+}
+.content form{
+    padding: 20px;
+}
+.content form p{
+    padding: 5px;
+}
+.content form label{
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+}
+.content form input{
+    width: 180px;
+}
+.content form .text label{
+    position: relative;
+    top: -135px;
+}
+.content
+.content
+
+
+
+
+
+
+
+

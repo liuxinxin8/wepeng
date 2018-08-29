@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title><link rel="stylesheet" href="style/top-bottom.css" type="text/css"/>
+    <link rel="stylesheet" href="style/sub_man_style.css" type="text/css"/>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/example.js"></script>
+    <script type="text/javascript"  src="js/posfixed.js"></script><!--导航定位-->
+</head>
+<body>
+<header class="o_h">
+    <div id="h_bg">
+        <ul class="o_h">
+            <li class="white1"></li>
+            <li class="ash"></li>
+            <li class="white2"></li>
+        </ul>
+    </div>
+    <img src="images/Logo.png" id="logo" alt=""/>
+
+    <ul class="small_nav o_a">
+        <li class="h_login"><a href="#">登陆 | 注册</a></li>
+        <li class="h_my"><a href="#">我的碰客</a></li>
+    </ul>
+    <div class="banner">
+        <img src="images/man_banner.jpg" alt="03"/>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="请输入关键字"/><button>搜索</button>
+    </div>
+</header>
+<!-------------------------------------------导航--------------------------------------------->
+<nav>
+    <ul class="big_nav o_h" id="example-one">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="sub_beauty.html">丽人街</a></li>
+        <li class="current_page_item"><a href="sub_man.html">男人装</a></li>
+        <li><a href="#">中国风</a></li>
+        <li><a href="#">饰品行</a></li>
+        <li><a href="#">玩具屋</a></li>
+        <li><a href="#">数字时尚</a></li>
+        <li><a href="#">碰客杂志</a></li>
+        <li><a href="#">俄文版</a></li>
+    </ul>
+    <div class="colors">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <script>
+        $(function(){
+            $(".colors div").click(function(){
+                var ys=$(this).css("background");
+                $("nav").css({background:ys});
+                var zy=$(this).css("color");
+                $("nav a").css({color:zy});
+            })
+        });
+        $(function(){
+            $('nav').posfixed({
+                distance : 0,
+                pos : 'top',
+                type : 'while',
+                hide : false
+            });
+        });
+    </script>
+</nav>
+<!--------------------------------------------内容--------------------------------------------------->
+<main class="o_h">
+    <article>
+<!-------------------------------------------涂鸦风格-------------------------------------------->
+        <section class="main_graf o_h">
+            <ul>
+                <li><h1>涂鸦风格AJ5</h1></li>
+                <li>涂鸦风格AJ5 </li>
+                <li>“Wings”曝光！</li>
+                <li>Converse全新All </li>
+                <li>Star让你“脚下生花”</li>
+            </ul>
+            <div><img src="images/man/list1.jpg" alt=""/></div>
+        </section>
+ <!----------------------------------------内容列表---------------------------------------------->
+        <section class="main_list o_h">
+            <div class="hd1">
+                <ul>
+                    <li><img src="images/man/main_list1-1.jpg" alt=""/></li>
+                    <li><img src="images/man/main_list1-2.jpg" alt=""/></li>
+                </ul>
+            </div>
+            <div class="hd2 o_h">
+                <ul>
+                    <li class="hd2_H">
+                        <h1>Virgil Abloh 亲口“否认”的解构鞋款</h1>
+                        <h3>是“设计撞车”还是“单纯致敬”？</h3>
+                        <p>Virgil Abloh  "Denial" of deconstruction of shoes</p>
+                    </li>
+                    <li class="hd2_Img1"><img src="images/man/main_list1-3.jpg" alt=""/></li>
+                    <li class="hd2_Img2"><img src="images/man/main_list1-4.jpg" alt=""/></li>
+                    <li class="hd2_text"><p>近日，球鞋圈被 VANS 的全新系列 “Inside Out” 刷屏了，</p>
+                        <p>这熟悉的拉链元素、解构设计以及与 OFF-WHITE 如出一辙的 “OFF THE WALL” 字样，</p>
+                        <p> 让不少人都在猜测这或许是 Virgil Abloh 联合 VANS 打造的全新联名系列。</p></li>
+                </ul>
+            </div>
+        </section>
+        <section class="main_list o_h">
+            <div class="hd1">
+                <ul>
+                    <li><img src="images/man/main_list2-1.jpg" alt=""/></li>
+                    <li><img src="images/man/main_list2-2.jpg" alt=""/></li>
+                </ul>
+            </div>
+            <div class="hd2 o_h">
+                <ul>
+                    <li class="hd2_H">
+                        <h1>Virgil Abloh 亲口“否认”的解构鞋款</h1>
+                        <h3>是“设计撞车”还是“单纯致敬”？</h3>
+                        <p>Virgil Abloh  "Denial" of deconstruction of shoes</p>
+                    </li>
+                    <li class="hd2_Img1"><img src="images/man/main_list2-3.jpg" alt=""/></li>
+                    <li class="hd2_Img2"><img src="images/man/main_list2-4.jpg" alt=""/></li>
+                    <li class="hd2_text"><p>近日，球鞋圈被 VANS 的全新系列 “Inside Out” 刷屏了，</p>
+                        <p>这熟悉的拉链元素、解构设计以及与 OFF-WHITE 如出一辙的 “OFF THE WALL” 字样，</p>
+                        <p> 让不少人都在猜测这或许是 Virgil Abloh 联合 VANS 打造的全新联名系列。</p></li>
+                </ul>
+            </div>
+        </section>
+        <section class="main_list o_h">
+            <div class="hd1">
+                <ul>
+                    <li><img src="images/man/main_list1-1.jpg" alt=""/></li>
+                    <li><img src="images/man/main_list1-2.jpg" alt=""/></li>
+                </ul>
+            </div>
+            <div class="hd2 o_h">
+                <ul>
+                    <li class="hd2_H">
+                        <h1>Virgil Abloh 亲口“否认”的解构鞋款</h1>
+                        <h3>是“设计撞车”还是“单纯致敬”？</h3>
+                        <p>Virgil Abloh  "Denial" of deconstruction of shoes</p>
+                    </li>
+                    <li class="hd2_Img1"><img src="images/man/main_list1-3.jpg" alt=""/></li>
+                    <li class="hd2_Img2"><img src="images/man/main_list1-4.jpg" alt=""/></li>
+                    <li class="hd2_text"><p>近日，球鞋圈被 VANS 的全新系列 “Inside Out” 刷屏了，</p>
+                        <p>这熟悉的拉链元素、解构设计以及与 OFF-WHITE 如出一辙的 “OFF THE WALL” 字样，</p>
+                        <p> 让不少人都在猜测这或许是 Virgil Abloh 联合 VANS 打造的全新联名系列。</p></li>
+                </ul>
+            </div>
+        </section>
+
+<!--------------------------------------------------联系我们------------------------------------->
+<section class="content o_h">
+    <div class="con_banner">
+        <img src="images/con_bg.jpg" alt=""/>
+    </div>
+    <dl>
+        <dt>联系我们</dt>
+        <dd>
+            <form action="">
+                <p><label for="u_name">用户名：</label><input id="u_name" type="text"/></p>
+                <p><label for="u_email">邮箱：</label><input id="u_email" type="email"/></p>
+                <p><label for="u_date">日期：</label><input id="u_date" type="date"/></p>
+                <p class="text"><label for="u_tel">事情：</label><textarea name="tel" id="u_tel" cols="30" rows="10">
+                </textarea></p>
+            </form>
+        </dd>
+    </dl>
+</section>
+</article>
+</main>
+<!---------------------------------------------------页尾------------------------------------------>
+<footer class="o_h">
+    <dl class="footer_text">
+        <dt><img src="images/logo-white.png" alt=""/></dt>
+        <dd>
+            一向走在潮...韩流前端的我，果断又在上周末发现了新节目
+            ——《Breakers》！这一档号称是全新的音乐竞技类节目，真的是将
+            很多有独特音乐风格的歌手带到了我的眼前。 ...
+        </dd>
+    </dl>
+    <div class="footer_hd o_h">
+        <ul class="footer_nav f_l">
+            <li class="nav_text"><a href="#">Home</a></li>
+            <li><a href="#">Place</a></li>
+            <li><a href="#">Customized</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <dl class="footer_con f_l">
+            <dt>Phone</dt>
+            <dd>44444444444</dd>
+            <dd>66666666666</dd>
+            <dd>04511234565</dd>
+        </dl>
+        <dl class="footer_con con1 f_l">
+            <dt>Email</dt>
+            <dd>1621115870@.qq.com</dd>
+            <dd>0451123455@.qq.com</dd>
+        </dl>
+        <dl class="footer_con con2 f_l">
+            <dt>Address</dt>
+            <dd>地球中国黑龙江省</dd>
+            <dd>哈尔滨市哈西东方国际中心十层</dd>
+            <dd>哈西东方国际中心十层</dd>
+        </dl>
+    </div>
+    <p>版权所有归@版权所有归</p>
+</footer>
+</body>
+</html>

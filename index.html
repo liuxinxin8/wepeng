@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>刘鑫鑫</title>
+    <link rel="stylesheet" href="style/top-bottom.css" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="style/component.css" />
+    <link rel="stylesheet" href="style/index_style.css" type="text/css"/>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="js/example.js"></script>
+    <script type="text/javascript"  src="js/modernizr.custom.js"></script><!--手风琴-->
+    <script type="text/javascript"  src="js/posfixed.js"></script><!--导航定位-->
+</head>
+<body>
+<header>
+    <div id="h_bg">
+        <ul class="o_h">
+            <li class="white1"></li>
+            <li class="ash"></li>
+            <li class="white2"></li>
+        </ul>
+    </div>
+
+    <img src="images/Logo.png" id="logo" alt=""/>
+
+    <ul class="small_nav o_a">
+            <li class="h_login"><a href="#">登陆 | 注册</a></li>
+            <li class="h_my"><a href="#">我的碰客</a></li>
+    </ul>
+<!-------------------------------------------------弹性--------------------------->
+    <ul id="elasticstack" class="elasticstack">
+        <li><img src="images/bg3.jpg" alt="01"/></li>
+        <li><img src="images/bg2.jpg" alt="02"/></li>
+        <li><img src="images/bg1.jpg" alt="03"/></li>
+        <li><img src="images/bg4.jpg" alt="04"/></li>
+        <li><img src="images/bg5.jpg" alt="05"/></li>
+        <li><img src="images/bg6.jpg" alt="06"/></li>
+    </ul>
+
+    <script src="js/draggabilly.pkgd.min.js"></script>
+    <script src="js/elastiStack.js"></script>
+    <script>
+        new ElastiStack(document.getElementById('elasticstack'));
+    </script>
+
+    <div class="search">
+        <input type="text" placeholder="请输入关键字"/><button>搜索</button>
+    </div>
+</header>
+<!--------------------------------------------导航------------------------------------------>
+<nav>
+    <ul class="big_nav o_h" id="example-one">
+        <li class="current_page_item"><a href="index.html">首页</a></li>
+        <li><a href="sub_beauty.html">丽人街</a></li>
+        <li><a href="sub_man.html">男人装</a></li>
+        <li><a href="#">中国风</a></li>
+        <li><a href="#">饰品行</a></li>
+        <li><a href="#">玩具屋</a></li>
+        <li><a href="#">数字时尚</a></li>
+        <li><a href="#">碰客杂志</a></li>
+        <li><a href="#">俄文版</a></li>
+    </ul>
+    <div class="colors">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <script>
+        $(function(){
+            $(".colors div").click(function(){
+                var ys=$(this).css("background");
+                $("nav").css({background:ys});
+                var zy=$(this).css("color");
+                $("nav a").css({color:zy});
+            })
+        });
+        $(function(){
+            $('nav').posfixed({
+                distance : 0,
+                pos : 'top',
+                type : 'while',
+                hide : false
+            });
+        });
+    </script>
+</nav>
+<main>
+    <article>
+<!-------------------------------------------手风琴------------------------------------------>
+    <div class="container">
+        <div id="va-accordion" class="va-container">
+            <div class="va-nav">
+                <span class="va-nav-prev">Previous</span>
+                <span class="va-nav-next">Next</span>
+            </div>
+            <div class="va-wrapper">
+                <div class="va-slice va-slice-1">
+                    <h3 class="va-title">关注焦点排行</h3>
+                    <div class="va-content">
+                        <p>Focus on focus</p>
+                        <ul class="bmenu">
+                            <li><a href="#">
+                                无冰何以安夏？ Zoku神器为你制冰斩夏！</a></li>
+                            <li><a href="#">
+                                Melissa 2018春夏系列品牌日，手绘春日梦幻之旅~</a></li>
+                            <li><a href="#">
+                                对他们来说，头发颜色有多重要？换个颜色换张脸好吗！</a></li>
+                            <li><a href="#">
+                                N°21旗舰店登陆北京</a></li>
+                            <li><a href="#">
+                                无冰何以安夏？ Zoku神器为你制冰斩夏！</a></li>
+                            <li><a href="#">
+                                Melissa 2018春夏系列品牌日，手绘春日梦幻之旅~</a></li>
+                            <li><a href="#">
+                                对他们来说，头发颜色有多重要？换个颜色换张脸好吗！</a></li>
+                            <li><a href="#">
+                                N°21旗舰店登陆北京</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="va-slice va-slice-2">
+                    <h3 class="va-title">流行趋势排行</h3>
+                    <div class="va-content">
+                        <p>Popular trend ranking</p>
+                        <ul class="bmenu">
+                            <li><a href="#">
+                                无冰何以安夏？ Zoku神器为你制冰斩夏！</a></li>
+                            <li><a href="#">
+                                Melissa 2018春夏系列品牌日，手绘春日梦幻之旅~</a></li>
+                            <li><a href="#">
+                                对他们来说，头发颜色有多重要？换个颜色换张脸好吗！</a></li>
+                            <li><a href="#">
+                                N°21旗舰店登陆北京</a></li>
+                            <li><a href="#">
+                                无冰何以安夏？ Zoku神器为你制冰斩夏！</a></li>
+                            <li><a href="#">
+                                Melissa 2018春夏系列品牌日，手绘春日梦幻之旅~</a></li>
+                            <li><a href="#">
+                                对他们来说，头发颜色有多重要？换个颜色换张脸好吗！</a></li>
+                            <li><a href="#">
+                                N°21旗舰店登陆北京</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="va-slice va-slice-3">
+                    <h3 class="va-title">公告栏</h3>
+                    <div class="va-content">
+                        <p>Bullentin board</p>
+                        <ul class="bmenu">
+                            <li><a href="#">
+                                无冰何以安夏？ Zoku神器为你制冰斩夏！</a></li>
+                            <li><a href="#">
+                                Melissa 2018春夏系列品牌日，手绘春日梦幻之旅~</a></li>
+                            <li><a href="#">
+                                对他们来说，头发颜色有多重要？换个颜色换张脸好吗！</a></li>
+                            <li><a href="#">
+                                N°21旗舰店登陆北京</a></li>
+                            <li><a href="#">
+                                无冰何以安夏？ Zoku神器为你制冰斩夏！</a></li>
+                            <li><a href="#">
+                                Melissa 2018春夏系列品牌日，手绘春日梦幻之旅~</a></li>
+                            <li><a href="#">
+                                对他们来说，头发颜色有多重要？换个颜色换张脸好吗！</a></li>
+                            <li><a href="#">
+                                N°21旗舰店登陆北京</a></li>
+                        </ul>
+                    </div>
+                </div><div class="va-slice va-slice-4">
+                    <h3 class="va-title">打折产品</h3>
+                    <div class="va-content">
+                        <p>Discounted product</p>
+                        <ul class="bmenu">
+                            <li><a href="#">
+                                无冰何以安夏？ Zoku神器为你制冰斩夏！</a></li>
+                            <li><a href="#">
+                                Melissa 2018春夏系列品牌日，手绘春日梦幻之旅~</a></li>
+                            <li><a href="#">
+                                对他们来说，头发颜色有多重要？换个颜色换张脸好吗！</a></li>
+                            <li><a href="#">
+                                N°21旗舰店登陆北京</a></li>
+                            <li><a href="#">
+                                无冰何以安夏？ Zoku神器为你制冰斩夏！</a></li>
+                            <li><a href="#">
+                                Melissa 2018春夏系列品牌日，手绘春日梦幻之旅~</a></li>
+                            <li><a href="#">
+                                对他们来说，头发颜色有多重要？换个颜色换张脸好吗！</a></li>
+                            <li><a href="#">
+                                N°21旗舰店登陆北京</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.vaccordion.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('#va-accordion').vaccordion({
+                expandedHeight	: 450,
+                animSpeed		: 500,
+                animEasing		: 'easeInOutBack',
+                animOpacity		: 0.4
+            });
+        });
+    </script>
+<!------------------------------------------------丽人街------------------------------------------>
+        <section class="beauty">
+            <dl class="o_h">
+                <dt>
+                     <h1>丽人街 <span></span></h1>
+                     <p>Lisle Street</p>
+                </dt>
+
+                <dd class="beauty-list3 f_r">
+                    <ul>
+                        <li><a href="#"><img src="images/girl3.JPG" alt=""/></a></li>
+                        <li class="b-text">
+                            <span></span>
+                            <h3><a href="#">3头发颜色有多重要？换个颜色换张脸好吗！</a></h3>
+                            <p><a href="#">
+                                一向走在潮...韩流前端的我，果断又在上周末发现了新节目
+                                ——《Breakers》！这一档号称是全新的音乐竞技类节目，真的是将
+                                很多有独特音乐风格的歌手带到了我的眼前。 ...</a>
+                            </p>
+                        </li>
+                    </ul>
+                </dd>
+                <dd class="beauty-list1">
+                    <ul>
+                        <li><a href="#"><img src="images/girl1.JPG" alt=""/></a></li>
+                        <li class="b-text">
+                            <h3><a href="#">1头发颜色有多重要？换个颜色换张脸好吗！</a></h3>
+                            <p><a href="#">
+                                一向走在潮...韩流前端的我，果断又在上周末发现了新节目
+                                ——《Breakers》！这一档号称是全新的音乐竞技类节目，真的是将
+                                很多有独特音乐风格的歌手带到了我的眼前。 ...</a>
+                            </p>
+                        </li>
+                    </ul>
+                </dd>
+                <dd class="beauty-list2">
+                    <ul>
+                        <li><a href="#"><img src="images/girl2.JPG" alt=""/></a></li>
+                        <li class="b-text">
+                            <h3><a href="#">2头发颜色有多重要？换个颜色换张脸好吗！</a></h3>
+                            <p><a href="#">
+                                一向走在潮...韩流前端的我，果断又在上周末发现了新节目
+                                ——《Breakers》！这一档号称是全新的音乐竞技类节目，真的是将
+                                很多有独特音乐风格的歌手带到了我的眼前。 ...</a>
+                            </p>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+        </section>
+<!------------------------------------------------男人装------------------------------------------>
+        <section class="man o_h">
+            <dl>
+                <dt><h1>男人装<span></span></h1>
+                <p>Man's clothes</p>
+                </dt>
+                <dd>
+                    <a href="#">
+                        <h3>本季，NARS以丝绒水雾柔滑唇霜</h3>
+                        <img src="images/man1.JPG" alt=""/>
+                        <p>
+                            一向走在潮...韩流前端的我，果断又在上周末发现了新节目
+                            ——《Breakers》！这一档号称是全新的音乐竞技类节目，真的是将
+                            很多有独特音乐风格的歌手带到了我的眼前。 ...</p>
+                        <button>Read More</button>
+                    </a>
+                </dd>
+                <dd>
+                    <a href="#">
+                        <h3>本季，NARS以丝绒水雾柔滑唇霜</h3>
+                        <img src="images/man2.jpg" alt=""/>
+                        <p>
+                            一向走在潮...韩流前端的我，果断又在上周末发现了新节目
+                            ——《Breakers》！这一档号称是全新的音乐竞技类节目，真的是将
+                            很多有独特音乐风格的歌手带到了我的眼前。 ...</p>
+                        <button>Read More</button>
+                    </a>
+                </dd>
+                <dd class="man-list1">
+                    <a href="#">
+                        <h3>本季，NARS以丝绒水雾柔滑唇霜</h3>
+                        <img src="images/man3.JPG" alt=""/>
+                        <p>
+                            一向走在潮...韩流前端的我，果断又在上周末发现了新节目
+                            ——《Breakers》！这一档号称是全新的音乐竞技类节目，真的是将
+                            很多有独特音乐风格的歌手带到了我的眼前。 ...</p>
+                        <button>Read More</button>
+                    </a>
+                </dd>
+            </dl>
+        </section>
+<!--------------------------------------------------饰品行----------------------------------------->
+        <section class="jeweiry">
+            <dl class="o_h">
+                <dt><h1>饰品行 <span></span></h1>
+                <p>Ornament line</p>
+                </dt>
+                <dd class="jew-list1">
+
+                    <a href="#">
+
+                        <div class="grid">
+                            <figure class="effect-layla">
+                                <img src="images/jew1.jpg" alt=""/>
+                                <figcaption>
+                                </figcaption>
+                            </figure>
+                        </div>
+                      <div class="j-text">
+                          <span></span>
+                          <h3>手链手环手镯</h3>
+                          <p>
+                            本季，NARS以丝绒水雾柔滑唇霜为你的双唇带来全新升级体验
+                            ，创新唇“霜”概念，秉持品牌一贯的大胆精神与不设限的风格品
+                            味，意图再次掀起美妆届的新革命。2018年5月 ...
+                          </p>
+                      </div>
+                    </a>
+                </dd>
+                <dd class="jew-list2">
+                    <a href="#">
+                        <div class="j-text">
+                            <span></span>
+                            <h3>手链手环手镯</h3>
+                          <p>
+                            本季，NARS以丝绒水雾柔滑唇霜为你的双唇带来全新升级体验
+                            ，创新唇“霜”概念，秉持品牌一贯的大胆精神与不设限的风格品
+                            味，意图再次掀起美妆届的新革命。2018年5月 ...
+                          </p>
+                        </div>
+                        <div class="grid">
+                            <figure class="effect-layla">
+                                <img src="images/jew2.jpg" alt=""/>
+                                <figcaption>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </a>
+                </dd>
+                <dd class="jew-list3">
+                    <a href="#">
+                        <div class="grid">
+                            <figure class="effect-layla">
+                                <img src="images/jew3.jpg" alt=""/>
+                                <figcaption>
+                                </figcaption>
+                            </figure>
+                        </div>
+                      <div class="j-text">
+                          <span></span>
+                          <h3>手链手环手镯</h3>
+                          <p>
+                            本季，NARS以丝绒水雾柔滑唇霜为你的双唇带来全新升级体验
+                            ，创新唇“霜”概念，秉持品牌一贯的大胆精神与不设限的风格品
+                            味，意图再次掀起美妆届的新革命。2018年5月 ...
+                          </p>
+                      </div>
+                    </a>
+                </dd>
+                <dd class="jew-list4">
+                    <a href="#">
+                      <div class="j-text">
+                          <span></span>
+                          <h3>手链手环手镯</h3>
+                          <p>
+                            本季，NARS以丝绒水雾柔滑唇霜为你的双唇带来全新升级体验
+                            ，创新唇“霜”概念，秉持品牌一贯的大胆精神与不设限的风格品
+                            味，意图再次掀起美妆届的新革命。2018年5月 ...
+                          </p>
+                      </div>
+                        <div class="grid">
+                            <figure class="effect-layla">
+                                <img src="images/jew-4.jpg" alt=""/>
+                                <figcaption>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </a>
+                </dd>
+            </dl>
+        </section>
+<!------------------------------------------------------玩具屋------------------------------------>
+        <section class="toys">
+            <dl class="o_h">
+                <dt>
+                <h1>玩具屋 <span></span></h1>
+                <p>Toy house</p>
+                </dt>
+                <dd class="toy-list1">
+                    <a href="#">
+
+                        <div class="t-text">
+                            <h3>多少明星因为不想洗头带发戴！然后她们便成了时尚ICON！</h3>
+                            <p>
+                                本季，NARS以丝绒水雾柔滑唇霜为你的双唇带来全新升级体验
+                                ，创新唇“霜”概念，秉持品牌一贯的大胆精神与不设限的风格品
+                                味，意图再次掀起美妆届的新革命。2018年5月 ...</p>
+                        </div>
+                        <img src="images/toy-1.jpg" alt=""/>
+                    </a>
+                </dd>
+                <dd class="toy-list2">
+                    <a href="#">
+
+                        <div class="t-text">
+                            <h3>多少明星因为不想洗头带发戴！然后她们便成了时尚ICON！</h3>
+                            <p>
+                                本季，NARS以丝绒水雾柔滑唇霜为你的双唇带来全新升级体验
+                                ，创新唇“霜”概念，秉持品牌一贯的大胆精神与不设限的风格品
+                                味，意图再次掀起美妆届的新革命。2018年5月 ...</p>
+                        </div>
+                        <img src="images/toy-2.jpg" alt=""/>
+                    </a>
+                </dd>
+                <dd class="toy-list3">
+                    <a href="#">
+
+                        <div class="t-text">
+                            <h3>多少明星因为不想洗头带发戴！然后她们便成了时尚ICON！</h3>
+                            <p>
+                                本季，NARS以丝绒水雾柔滑唇霜为你的双唇带来全新升级体验
+                                ，创新唇“霜”概念，秉持品牌一贯的大胆精神与不设限的风格品
+                                味，意图再次掀起美妆届的新革命。2018年5月 ...</p>
+                        </div>
+                        <img src="images/toy-3.jpg" alt=""/>
+                    </a>
+                </dd>
+            </dl>
+        </section>
+<!----------------------------------------------------------中国风-------------------------------->
+        <section class="china">
+            <dl class="o_h">
+                <dt><h1>中国风 <span></span></h1>
+                <p>Chinese style</p>
+                </dt>
+                <dd class="china-list1 grid">
+                    <div class="pic-left">
+                        <div class="hd">
+                            <ul class="o_h">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="bd">
+                            <ul class="picList">
+                                <li>
+                                    <figure class="effect-marley">
+                                        <img src="images/china_list1.jpg" alt=""/>
+                                        <figcaption>
+                                            <h2>01</h2>
+                                            <p>本季，NARS以丝绒水雾柔滑唇霜为你的双唇带来全新升级体验
+                                                    ，创新唇“霜”概念，秉持品牌一贯的大胆精神与不设限的风格品
+                                                    ，创新唇“霜”概念，秉持品牌一贯的大胆精神与不设限的风格品
+                                                味</p>
+                                            <a href="#" target="_blank">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure class="effect-marley">
+                                        <img src="images/china_list2.jpg" alt=""/>
+                                        <figcaption>
+                                            <h2>02</h2>
+                                            <p>本季，NARS以丝绒水雾柔滑唇霜为你的双唇带来全新升级体验
+                                               本季，NARS以丝绒水雾柔滑唇霜为你的双唇带来全新升级体验
+                                                    ，创新唇“霜”概念，秉持品牌一贯的大胆精神与不设限的风格品
+                                                味</p>
+                                            <a href="#" target="_blank">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure class="effect-marley">
+                                        <img src="images/china_list3.jpg" alt=""/>
+                                           <figcaption>
+                                               <h2>03</h2>
+                                               <p>本季，NARS以丝绒水雾柔滑唇霜为你的双唇带来全新升级体验
+                                                   ，创新唇“霜”概念，秉持品牌一贯的大胆精神与不设限的风格品
+                                                   ，创新唇“霜”概念，秉持品牌一贯的大胆精神与不设限的风格品
+                                                   味</p>
+                                               <a href="#" target="_blank">View more</a>
+                                           </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                        <figure class="effect-marley">
+                                            <img src="images/china_list4.jpg" alt=""/>
+                                            <figcaption>
+                                                <h2>04</h2>
+                                                <p>本季，NARS以丝绒水雾柔滑唇霜为你的双唇带来全新升级体验
+                                                   本季，NARS以丝绒水雾柔滑唇霜为你的双唇带来全新升级体验
+                                                    ，创新唇“霜”概念，秉持品牌一贯的大胆精神与不设限的风格品
+                                                    味</p>
+                                                <a href="#" target="_blank">View more</a>
+                                            </figcaption>
+                                        </figure>
+                                </li>
+                                <li>
+                                        <figure class="effect-marley">
+                                            <img src="images/china_list5.jpg" alt=""/>
+                                            <figcaption>
+                                                <h2>05</h2>
+                                                <p>本季，NARS以丝绒水雾柔滑唇霜为你的双唇带来全新升级体验
+                                                    ，创新唇“霜”概念，秉持品牌一贯的大胆精神与不设限的风格品
+                                                    ，创新唇“霜”概念，秉持品牌一贯的大胆精神与不设限的风格品
+                                                    味</p>
+                                                <a href="#" target="_blank">View more</a>
+                                            </figcaption>
+                                        </figure>
+                                </li>
+                                <li>
+                                        <figure class="effect-marley">
+                                            <img src="images/china_list6.jpg" alt=""/>
+                                            <figcaption>
+                                                <h2>06</h2>
+                                                <p>本季，NARS以丝绒水雾柔滑唇霜为你的双唇带来全新升级体验
+                                                    ，创新唇本季，NARS以丝绒水雾柔滑唇霜为你的双唇带来全新升级体验
+                                                    ，创新唇“霜”概念，秉持品牌一贯的大胆精神与不设限的风格品
+                                                    味</p>
+                                                <a href="#" target="_blank">View more</a>
+                                            </figcaption>
+                                        </figure>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </dd>
+                <script type="text/javascript">
+                    jQuery(".pic-left").slide({titCell:".hd ul",
+                        mainCell:".bd ul",autoPage:true,effect:"leftLoop",
+                        autoPlay:true,vis:1});
+                </script>
+                <dd class="china-list2 o_h">
+                    <ul>
+                        <li class="grid">
+                                <figure class="effect-marley">
+                                    <img src="images/china1.jpg" alt="img09"/>
+                                    <figcaption>
+                                        <h2>中国风中国风</h2>
+                                        <p>本季，NARS以丝绒水雾柔滑唇霜为你的双唇带来全新升级体验
+                                            ，创新唇“霜”概念，秉持品牌一贯的大胆精神与不设限的风格品
+                                            味</p>
+                                        <a href="#" target="_blank">View more</a>
+                                    </figcaption>
+                                </figure>
+                        </li>
+                        <li class="grid">
+                                <figure class="effect-marley">
+                                    <img src="images/china2.jpg" alt="img09"/>
+                                    <figcaption>
+                                        <h2>中国风中国风</h2>
+                                        <p>本季，NARS以丝绒水雾柔滑唇霜为你的双唇带来全新升级体验
+                                            ，创新唇“霜”概念，秉持品牌一贯的大胆精神与不设限的风格品
+                                            味</p>
+                                        <a href="#" target="_blank">View more</a>
+                                    </figcaption>
+                                </figure>
+                        </li>
+                        <li class="grid">
+                                <figure class="effect-marley">
+                                    <img src="images/china3.jpg" alt="img09"/>
+                                    <figcaption>
+                                        <h2>中国风中国风</h2>
+                                        <p>本季，NARS以丝绒水雾柔滑唇霜为你的双唇带来全新升级体验
+                                            ，创新唇“霜”概念，秉持品牌一贯的大胆精神与不设限的风格品
+                                            味</p>
+                                        <a href="#" target="_blank">View more</a>
+                                    </figcaption>
+                                </figure>
+                        </li>
+                        <li class="grid">
+                                <figure class="effect-marley">
+                                    <img src="images/china4.jpg" alt="img09"/>
+                                    <figcaption>
+                                        <h2>中国风中国风</h2>
+                                        <p>本季，NARS以丝绒水雾柔滑唇霜为你的双唇带来全新升级体验
+                                            ，创新唇“霜”概念，秉持品牌一贯的大胆精神与不设限的风格品
+                                            味</p>
+                                        <a href="#" target="_blank">View more</a>
+                                    </figcaption>
+                                </figure>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+        </section>
+  <!--------------------------------------------------------潮流单品------------------------------>
+        <section class="trend">
+            <dl>
+                <dt><h1>潮流单品 <span></span></h1>
+                <p>Fashion single</p>
+                </dt>
+                <dd>
+                    <img src="images/trend1.jpg" alt=""/>
+                    <a href="#">潮流单品</a>
+                </dd>
+                <dd>
+                    <img src="images/trend2.jpg" alt=""/>
+                    <a href="#">潮流单品</a>
+                </dd>
+                <dd>
+                    <img src="images/trend3.jpg" alt=""/>
+                    <a href="#">潮流单品</a>
+                </dd>
+                <dd>
+                    <img src="images/trend4.png" alt=""/>
+                    <a href="#">潮流单品</a>
+                </dd>
+                <dd>
+                    <img src="images/trend5.png" alt=""/>
+                    <a href="#">潮流单品</a>
+                </dd>
+                <dd>
+                    <img src="images/trend6.jpg" alt=""/>
+                    <a href="#">潮流单品</a>
+                </dd>
+                <dd>
+                    <img src="images/trend1.jpg" alt=""/>
+                    <a href="#">潮流单品</a>
+                </dd>
+                <dd>
+                    <img src="images/trend2.jpg" alt=""/>
+                    <a href="#">潮流单品</a>
+                </dd>
+            </dl>
+        </section>
+ <!------------------------------------------------------服务板块--------------------------------->
+        <section class="service o_h">
+            <div id="hd1"></div>
+            <div id="hd2">
+                <div id="bd">
+                    <ul class="o_h">
+                        <li>
+                            <div class="s-text">
+                            <h3>新手上路</h3>
+                            <p>内容为网上购物流程；搜索商品；帮你挑选；注册新用户。</p></div>
+                        </li>
+                        <li>
+                            <div class="s-text">
+                            <h3>订购方式</h3>
+                            <p>内容为网上下单，电话订购。</p></div>
+                        </li>
+                        <li>
+                            <div class="s-text">
+                            <h3>配送服务</h3>
+                            <p>内容为送货上门，定点送货。</p></div>
+                        </li>
+                        <li>
+                            <div class="s-text">
+                            <h3>付款方式 </h3>
+                            <p>内容为货到付款。</p></div>
+                        </li>
+                        <li>
+                            <div class="s-text">
+                            <h3>售后服务</h3>
+                            <p>内容为售后服务原则，退货原则。</p></div>
+                        </li>
+                        <li>
+                            <div class="s-text">
+                            <h3>客户服务</h3>
+                            <p>内容为订单查询，常见问题，在线客服，联系方式。</p></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--------------------------------------------联系我们---------------------------------- --->
+        <section class="contact">
+                <h1>Book Your Table</h1>
+                <form role="form">
+                    <h3>联系我们
+                        <span>contact us</span>
+                    </h3>
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                    <input type="text" class="form-control" id="phone" placeholder="Phone">
+                    <input type="date" class="form-control" id="date" placeholder="Date">
+                    <input type="time" class="form-control" id="time" placeholder="Time">
+                    <input type="text" class="form-control" id="party" placeholder="Party">
+                    <textarea class="form-control" id="message" placeholder="Message" rows="8">
+                    </textarea>
+                    <button type="submit" class="btn">Book</button>
+                </form>
+        </section>
+    </article>
+</main>
+<footer class="o_h">
+    <dl class="footer_text">
+        <dt><img src="images/logo-white.png" alt=""/></dt>
+        <dd>
+            一向走在潮...韩流前端的我，果断又在上周末发现了新节目
+            ——《Breakers》！这一档号称是全新的音乐竞技类节目，真的是将
+            很多有独特音乐风格的歌手带到了我的眼前。 ...
+        </dd>
+    </dl>
+    <div class="footer_hd o_h">
+        <ul class="footer_nav f_l">
+            <li class="nav_text"><a href="#">Home</a></li>
+            <li><a href="#">Place</a></li>
+            <li><a href="#">Customized</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <dl class="footer_con f_l">
+            <dt>Phone</dt>
+            <dd>44444444444</dd>
+            <dd>66666666666</dd>
+            <dd>04511234565</dd>
+        </dl>
+        <dl class="footer_con con1 f_l">
+            <dt>Email</dt>
+            <dd>1621115870@.qq.com</dd>
+            <dd>0451123455@.qq.com</dd>
+        </dl>
+        <dl class="footer_con con2 f_l">
+            <dt>Address</dt>
+            <dd>地球中国黑龙江省</dd>
+            <dd>哈尔滨市哈西东方国际中心十层</dd>
+            <dd>哈西东方国际中心十层</dd>
+        </dl>
+    </div>
+    <p>版权所有归@版权所有归</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,144 @@
+body{
+    background: #E5E4DA;
+    padding: 50px;
+}
+header,main{
+    background: #ffffff;
+}
+main .main_graf{
+    padding: 100px 20px 40px;
+}
+main .main_graf ul{
+    background: #F5F5F5;
+    width:20%;
+    height: 350px;
+    float: left;
+    margin-left: 200px;
+    padding: 20px 30px;
+}
+main .main_graf div{
+    float: left;
+    width: 50%;
+    height:350px;
+    padding-left: 200px;
+}
+main .main_graf img{
+    width: 100%;
+    height: 100%;
+}
+main .main_graf ul li{
+    padding: 5px 10px;
+    color: #000;
+}
+main .main_graf ul h1{
+    color: #6c7895;
+    font-size: 24px;
+    margin-left: -10px;
+    padding-bottom: 15px;
+}
+/*---------------------------------------内容列表-----------------------------------------------*/
+main .main_list{
+    padding: 40px;
+}
+main .main_list div{
+    width: 50%;
+    float: left;
+}
+main .main_list img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+main .main_list li:hover img{
+    opacity: .8;
+}
+main .main_list .hd1 li{
+    padding:  10px 10px 0 0;
+    height: 350px;
+}
+main .main_list .hd2 li{
+    float: left;
+    padding: 10px 10px 0 0;
+}
+main .main_list .hd2 .hd2_H{
+    width: 100%;
+    height: 200px;
+    padding: 20px 0 0 100px;
+    color: #555;
+}
+main .main_list .hd2 .hd2_H h1{
+    font-size: 26px;
+    padding: 20px 0;
+}
+main .main_list .hd2 .hd2_H h3{
+    padding: 10px 0;
+}
+main .main_list .hd2 .hd2_H p{
+    color: #999;
+}
+main .main_list .hd2 .hd2_Img1{
+    width: 50%;
+    height: 500px;
+}
+main .main_list .hd2 .hd2_Img2{
+    width: 50%;
+    height: 250px;
+    padding-right: 0;
+}
+main .main_list .hd2 .hd2_text{
+    width: 50%;
+    height: 250px;
+    padding: 30px 20px;
+    font-size: 14px;
+}
+
+
+
+/*---------------------------------------联系我们---------------------------------------*/
+.content{
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    padding: 50px 0;
+}
+.content .con_banner{
+    width: 70%;
+}
+.content .con_banner img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #c4c4c4;
+}
+.content dl{
+    width: 40%;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+    box-shadow: 0 0 20px #c4c4c4;
+    padding: 20px;
+}
+.content dl dt{
+    font-size: 24px;
+    color: #6c7895;
+    padding: 10px 0 0 10px;
+}
+.content form{
+    padding: 20px;
+}
+.content form p{
+    padding: 5px;
+}
+.content form label{
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+}
+.content form input{
+    width: 180px;
+}
+.content form .text label{
+    position: relative;
+    top: -135px;
+}
